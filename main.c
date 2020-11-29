@@ -15,7 +15,7 @@ void get_pedido(char *pedido,int tamanho){
 void get_strings(int size_matrix, char grade[][size_matrix]){
     for (int x=0;x<size_matrix;x++)
     {
-    	fgets(grade[x],23,stdin);
+    	fgets(grade[x],size_matrix+2,stdin);
 	}
 }
 
@@ -37,7 +37,7 @@ int main()
 			{
 				printf("%c",grade[x][y]);
 			}
-			printf("\n");
+			//printf("\n");
 		}
 	}
 
