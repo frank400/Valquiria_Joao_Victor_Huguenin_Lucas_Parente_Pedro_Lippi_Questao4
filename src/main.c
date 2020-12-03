@@ -66,15 +66,7 @@ int main()
 	// 	}
 	// 	printf("\n");
 	// }
-	// printf("Espelhamento horizontal\n");
-	// for (int x=0;x<23;x=x+1)
-    // {
-    // 	for (int y=strlen(grade[x]);y>0;y=y-1)
-    // 	{
-    // 		printf("%c",grade[x][y]);
-	// 	}
-	// 	printf("\n");
-	// }
+	
 	return 0;
 }
 
