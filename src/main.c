@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-
-#define size 23
+#include "gira_matrix.h"
 
 void get_pedido(char *pedido,int tamanho){
 
