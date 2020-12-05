@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(src)
 
-add_executable(question4
+add_executable(Valquiria_Joao_Victor_Huguenin_Lucas_Parente_Pedro_Lippi_Questao4
         src/espelha_horizontal.c
         src/espelha_vertical.c
         src/funcoes_matrix.c
