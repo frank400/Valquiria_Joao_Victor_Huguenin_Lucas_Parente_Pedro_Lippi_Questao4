@@ -9,13 +9,20 @@ void get_pedido(char *pedido,int tamanho){
 
 	fgets(pedido,tamanho,stdin);
 }
-void get_strings(int size_matrix, char grade[][size_matrix]){
-    for (int x=0;x<size_matrix;x++)
+void seleciona_operacao(char pedido[15],char grade[size][size]){
+    if (strcmp(pedido,"R1") == 10)
     {
-    	fgets(grade[x],size_matrix+2,stdin);
-	}
+        gira_sentido_horario(grade);
+    }
+    else if(strcmp(pedido,"R2")==10){
+        gira_sentido_anti_horario(grade);
+    }
+    else if(strcmp(pedido,"EV")==10){
+        espelha_vertical(grade);
+    }else if(strcmp(pedido,"EH")==10){
+        espelha_horizontal(grade);
+    }
 }
-
 int main()
 {
     char grade[size][size];
@@ -25,47 +32,7 @@ int main()
 	
 	char pedido[15];
 	get_pedido(pedido,15);
-
-	if (strcmp(pedido,"R1"))
-	{
-		for (int x=22;x>=0;x--)
-		{
-			for (int y=0;y<strlen(grade[x]);y++)
-			{
-				printf("%c",grade[x][y]);
-			}
-			//printf("\n");
-		}
-	}
-
-	// for (int x=0;x<23;x=x+1)
-    // {
-    // 	for (int y=0;y<strlen(grade[x]);y=y+1)
-    // 	{
-    // 		printf("%c",grade[x][y]);
-	// 	}
-	// 	printf("\n");
-	// }
-	// printf("Rotacao horaria\n");
-	
-	// printf("Rotacao anti-horaria\n");
-	// for (int x=23;x>0;x--)
-    // {
-    // 	for (int y=0;y<strlen(grade[x]);y++)
-    // 	{
-    // 		printf("%c",grade[y][x]);
-	// 	}
-	// 	printf("\n");
-	// }
-	// printf("Espelhamento vertical\n");
-	// for (int x=23;x>0;x=x-1)
-    // {
-    // 	for (int y=0;y<strlen(grade[x]);y=y+1)
-    // 	{
-    // 		printf("%c",grade[x][y]);
-	// 	}
-	// 	printf("\n");
-	// }
+	seleciona_operacao(pedido,grade);
 	
 	return 0;
 }
