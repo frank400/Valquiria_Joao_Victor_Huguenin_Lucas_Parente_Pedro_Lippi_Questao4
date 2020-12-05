@@ -6,7 +6,7 @@
 
 #define size 23
 
-void gira_sentindio_horario(char grade[size][size]);
+void gira_sentido_horario(char grade[size][size]);
 
 void gira_sentido_anti_horario(char grade[size][size]);
 
