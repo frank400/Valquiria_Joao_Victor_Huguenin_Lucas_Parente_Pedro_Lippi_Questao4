@@ -1,4 +1,5 @@
 #include "gira_matrix.h"
+#include "funcoes_matrix.h"
 
 void get_pedido(char *pedido,int tamanho){
 
@@ -28,7 +29,7 @@ int main()
     char grade[size][size];
 
     printf("Digite o desenho que deseja modificar:\n");
-	get_strings(size,grade);
+	get_strings(grade);
 	
 	char pedido[15];
 	get_pedido(pedido,15);
