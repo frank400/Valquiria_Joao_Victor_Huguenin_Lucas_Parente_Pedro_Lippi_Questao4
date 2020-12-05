@@ -14,7 +14,7 @@ Para compilar o projeto há duas opções:
 2. Utilizando o Cmake: execute a seguinte sequencia de comandos na root do projeto
   - cmake .
   - make .
-  - ./Valquiria_Joao_Victor_Huguenin_Lucas_Parente_Pedro_Lippi_Questao3
+  - ./Valquiria_Joao_Victor_Huguenin_Lucas_Parente_Pedro_Lippi_Questao4
 
 ## Objetivos da questão
 
