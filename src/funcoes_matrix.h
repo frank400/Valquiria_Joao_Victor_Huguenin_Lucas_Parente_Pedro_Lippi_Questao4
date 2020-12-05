@@ -1,6 +1,7 @@
 #ifndef FUNCOES_MATRIX_H
 #define FUNCOES_MATRIX_H
 
-void get_strings(int size_matrix, char grade[][size_matrix]);
+#define size 23
+void get_strings(char grade[size][size]);
 
 #endif
